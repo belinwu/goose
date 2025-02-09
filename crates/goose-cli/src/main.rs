@@ -1,6 +1,7 @@
 use anyhow::Result;
 use clap::{CommandFactory, Parser, Subcommand};
 
+mod cli_prompt;
 mod commands;
 mod log_usage;
 mod logging;
