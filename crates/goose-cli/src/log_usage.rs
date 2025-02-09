@@ -58,7 +58,7 @@ mod tests {
 
     #[test]
     fn test_session_logging() {
-        run_with_tmp_dir(|| {
+        run_with_tmp_dir(|_| {
             let home_dir = dirs::home_dir().unwrap();
             let log_file = home_dir
                 .join(".config")
